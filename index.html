@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — LawSchedule</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 800px; margin: 40px auto; padding: 0 24px; color: #222; line-height: 1.7; }
+  h1 { font-size: 1.8em; border-bottom: 2px solid #444; padding-bottom: 12px; }
+  h2 { font-size: 1.2em; margin-top: 2em; color: #333; }
+  p, li { font-size: 1em; }
+  ul { padding-left: 1.4em; }
+  .meta { color: #666; font-size: 0.9em; margin-bottom: 2em; }
+  a { color: #1a4f8a; }
+  footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ccc; color: #666; font-size: 0.88em; }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidad</h1>
+<p class="meta">Aplicación: <strong>LawSchedule</strong><br>
+Última actualización: <strong>8 de junio de 2026</strong></p>
+
+<h2>1. Responsable del tratamiento</h2>
+<p>LawSchedule es una aplicación de gestión judicial de uso profesional. El responsable del tratamiento de los datos es el usuario que instala y opera la aplicación en su dispositivo.</p>
+
+<h2>2. Datos que se recopilan</h2>
+<p>La aplicación gestiona los siguientes datos con el único fin de registrar y organizar la actividad profesional del usuario:</p>
+<ul>
+  <li><strong>Datos de cuenta:</strong> dirección de correo electrónico y nombre del abogado o profesional.</li>
+  <li><strong>Datos de expedientes (registros):</strong> nombre del cliente, número de DNI/NIF, número de expediente, importe en euros, correo electrónico y teléfono de contacto del cliente.</li>
+  <li><strong>Datos de guardias:</strong> nombre del asistido, fecha de actuación, juzgado, agente judicial, juez y observaciones.</li>
+  <li><strong>Datos funcionales de la app:</strong> preferencias de sesión (token de autenticación cifrado) y metadatos de sincronización.</li>
+</ul>
+<p>La aplicación <strong>no recopila datos de uso, analíticas, publicidad ni información del dispositivo</strong> más allá de lo estrictamente necesario para su funcionamiento.</p>
+
+<h2>3. Finalidad del tratamiento</h2>
+<p>Los datos se tratan exclusivamente para:</p>
+<ul>
+  <li>Registrar y consultar expedientes judiciales y guardias del profesional.</li>
+  <li>Autenticar al usuario y mantener la sesión activa de forma segura.</li>
+  <li>Exportar e importar copias de seguridad cifradas a petición del usuario.</li>
+</ul>
+
+<h2>4. Base jurídica</h2>
+<p>El tratamiento se fundamenta en el <strong>interés legítimo y el consentimiento explícito</strong> del profesional que opera la aplicación (art. 6.1.a y 6.1.f del RGPD), así como en la necesidad de ejecución de la relación contractual con el servicio (art. 6.1.b del RGPD).</p>
+
+<h2>5. Almacenamiento y seguridad</h2>
+<p>Todos los datos se almacenan <strong>localmente en el dispositivo del usuario</strong>, protegidos mediante cifrado AES-256-GCM (SQLCipher). La clave de cifrado se genera y custodia en el AndroidKeyStore del propio dispositivo y <strong>nunca se transmite a ningún servidor</strong>.</p>
+<p>La sincronización con el servidor se realiza mediante conexiones TLS 1.2/1.3 con <em>certificate pinning</em>. Las contraseñas se almacenan exclusivamente como hashes PBKDF2-HMAC-SHA256 (600.000 iteraciones) y nunca en texto plano.</p>
+<p>Las copias de seguridad exportadas por el usuario están cifradas con AES-256-GCM y protegidas por la contraseña de la cuenta.</p>
+
+<h2>6. Compartición de datos con terceros</h2>
+<p>LawSchedule <strong>no vende, cede ni comparte datos personales con terceros</strong> para fines comerciales, publicitarios ni de ninguna otra naturaleza. Los datos de autenticación se transmiten al servidor de la aplicación (<code>lawschedule-api.onrender.com</code>) únicamente para verificar la identidad del usuario.</p>
+
+<h2>7. Conservación de los datos</h2>
+<p>Los datos se conservan en el dispositivo mientras el usuario mantenga la aplicación instalada o hasta que los elimine manualmente. El usuario puede borrar todos sus datos en cualquier momento desde la pantalla de Ajustes mediante la función de <em>borrado seguro</em>, que elimina de forma irrecuperable la base de datos, las claves criptográficas y las copias de seguridad locales.</p>
+
+<h2>8. Derechos del usuario (RGPD)</h2>
+<p>En virtud del Reglamento General de Protección de Datos (UE) 2016/679, el usuario tiene derecho a:</p>
+<ul>
+  <li><strong>Acceso:</strong> consultar los datos almacenados (visibles directamente en la aplicación).</li>
+  <li><strong>Rectificación:</strong> modificar cualquier dato desde la propia interfaz.</li>
+  <li><strong>Supresión:</strong> eliminar registros individuales o la totalidad de los datos.</li>
+  <li><strong>Portabilidad:</strong> exportar todos los datos mediante la función de copia de seguridad.</li>
+  <li><strong>Oposición y limitación:</strong> el usuario controla en todo momento qué datos introduce y puede dejar de usar la aplicación en cualquier momento.</li>
+</ul>
+
+<h2>9. Menores de edad</h2>
+<p>LawSchedule está dirigida exclusivamente a profesionales del ámbito jurídico. No está destinada ni autorizada para su uso por menores de 18 años.</p>
+
+<h2>10. Cambios en esta política</h2>
+<p>Cualquier modificación relevante de esta política de privacidad se comunicará al usuario mediante una notificación en la propia aplicación antes de su entrada en vigor.</p>
+
+<h2>11. Contacto</h2>
+<p>Para cualquier consulta relacionada con la privacidad y el tratamiento de datos, puede contactar en: <a href="mailto:elgraco363@gmail.com">elgraco363@gmail.com</a></p>
+
+<footer>
+  LawSchedule &mdash; Aplicación de gestión judicial profesional.<br>
+  Esta política se aplica a la versión 1.0.0 y posteriores de la aplicación para Android.
+</footer>
+
+</body>
+</html>
